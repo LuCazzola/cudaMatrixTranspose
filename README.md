@@ -151,12 +151,15 @@ sbatch launch_benchmark.sh
 ```
 
 <hr><br>
+
 ## Graph Plotting
 Inside the project's directory there's also a python script which take's the content of [**data folder**](data/) and generates 2 types of graphs
 
 * Matrix size X Mean execution time
 * Matrix size X Mean effective bandwidth
+  
 <br>
+
 Test it by :
 ```
 python3 plot_data.py
