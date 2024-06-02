@@ -78,7 +78,7 @@ There are many pre-set scripts to choose from :
 
 <a name="CPU-sec"></a>
 ## CPU test commands ( Homework-1 )
-
+### COMMANDS
 **"run_main.sh"** script sets **parameters** related to **homework-1** executable and runs it
 <br>
 To [change run parameters](run_main.sh?plain=1#L12-L19) and have a better understanding of its functionalities see : [**run_main.sh**](run_main.sh?plain=1#L3-L9)
@@ -125,7 +125,7 @@ Then login and go inside the project's folder
 cd cudaMatrixTranspose
 ```
 <hr><br>
-
+### COMMANDS
 **"launch_main.sh"** script sets **parameters** related to **homework-2** executable and runs it
 <br>
 To [change run parameters](launch_main.sh?plain=1#L26-L37) and have a better understanding of its functionalities see : [**launch_main.sh**](launch_main.sh?plain=1#L17-L23)
