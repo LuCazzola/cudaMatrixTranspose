@@ -64,15 +64,22 @@ Here follows the Hierarchy of relevant project's files :
 
 Makefile defines 4 rules :
 * **make** : builds object files and **homework-1 + homework-2** executables
-* **make debug** :  builds object files and **homework-1 + homework-2** executables adding debugging flags
+* **make debug** :  builds object files and ALL executables adding debugging flags
 * **make benchmark** : builds object files and **benchmark + benchmark_gpu** executable
 * **make clean** : cleans all object files
+<br>
+There are many pre-set scripts to choose from :
+<br>
+>> <a href="#CPU-sec">CPU scripts section ( Homework-1 )</a>
+<br>
+>> <a href="#GPU-sec">GPU scripts section ( Homework-2 )</a> 
 
 <hr><br>
 
-## CPU test commands (Homework-1)
-
-**"run_main.sh"** script sets **parameters** related to **homework-1** executable and runs it
+<a name="CPU-sec"></a>
+## CPU test commands ( Homework-1 )
+### COMMANDS
+**"run_main.sh"** script sets **parameters** related to **homework-1** executable and runs it.
 <br>
 To [change run parameters](run_main.sh?plain=1#L12-L19) and have a better understanding of its functionalities see : [**run_main.sh**](run_main.sh?plain=1#L3-L9)
 ```
@@ -82,7 +89,7 @@ make
 
 <br>
 
-**"run_benchmark.sh"** script sets **parameters** related to **benchmark** executable and runs it
+**"run_benchmark.sh"** script sets **parameters** related to **benchmark** executable and runs it.
 <br>
 extracted data can be found on the [**data folder**](data/)
 <br>
@@ -102,43 +109,67 @@ make clean
 make debug
 ./run_cache_benchmark.sh
 ```
+<hr><br>
 
-## GPU test commands (Homework-2)
+<a name="GPU-sec"></a>
+## GPU test commands ( Homework-2 )
+### NOTE
+Please consider that the following commands are supposed to be ran on the **Marzola DISI cluster**, modify the [launch_main.sh](launch_main.sh?plain=1#L3-L13) & [launch_benchmark.sh](launch_benchmark.sh?plain=1#L3-L13) scripts if needed to change partition or SLURM system.
+<br><br>
+**Outside the cloned project folder** upload the project's directory to the login node
+```
+scp -r cudaMatrixTranspose <YOUR USERNAME>@marzola.disi.unitn.it:/home/<YOUR USERNAME>
+```
+Then login and go inside the project's folder
+```
+cd cudaMatrixTranspose
+```
+<hr><br>
 
-**"run_main.sh"** script sets **parameters** related to **homework-1** executable and runs it
+### COMMANDS
+**"launch_main.sh"** script sets **parameters** related to **homework-2** executable and runs it.
 <br>
-To [change run parameters](run_main.sh?plain=1#L12-L19) and have a better understanding of its functionalities see : [**run_main.sh**](run_main.sh?plain=1#L3-L9)
+To [change run parameters](launch_main.sh?plain=1#L26-L37) and have a better understanding of its functionalities see : [**launch_main.sh**](launch_main.sh?plain=1#L17-L23)
 ```
 make
-./run_main.sh
+sbatch launch_main.sh
 ```
-
+To visualize the results, once the node returns do:
+```
+cat output.out
+```
 <br>
 
-**"run_benchmark.sh"** script sets **parameters** related to **benchmark** executable and runs it
+**"launch_benchmark.sh"** script sets **parameters** related to **benchmark_gpu** executable and runs it.
 <br>
 extracted data can be found on the [**data folder**](data/)
 <br>
-To [change run parameters](run_benchmark.sh?plain=1#L20-L28) and have a better understanding of its functionalities see : [**run_benchmark.sh**](run_benchmark.sh?plain=1#L3-L17)
+To [change run parameters](launch_benchmark.sh?plain=1#L35-L49) and have a better understanding of its functionalities see : [**launch_benchmark.sh**](launch_benchmark.sh?plain=1#L16-L30)
 ```
 make benchmark
-./run_benchmark.sh
+sbatch launch_benchmark.sh
 ```
 
+<hr><br>
+
+## Graph Plotting
+Inside the project's directory there's also a python script which take's the content of [**data folder**](data/) and generates 2 types of graphs
+
+* x : Matrix size - y : Mean execution time
+* x : Matrix size - y : Mean effective bandwidth
+  
 <br>
 
-**"run_cache_benchmark.sh"** script sets **parameters** related to **homework-1** and runs Cachegrind on it, extracting localized informations about cache misses inside transpose_naive() or transpose_blocks() functions (according to the chosen parameter "method")
-<br>
-To [change run parameters](run_cache_benchmark.sh?plain=1#L18-L25) and have a better understanding of its functionalities see : [**run_cache_benchmark.sh**](run_cache_benchmark.sh?plain=1#L3-L15)
+Test it by :
 ```
-make clean
-make debug
-./run_cache_benchmark.sh
+python3 plot_data.py
 ```
-
+You can customize what information to plot inside the [**script**](plot_data.py?plain=1#L53-L74)
 
 
 <hr><br>
 
+## Extra Customization
 It's also possible to change some other parameters at compilation level (optimization level and matrix element data type) by changing some [**variables in the makefile**](Makefile?plain=1#L3-L6)) :
+
 
