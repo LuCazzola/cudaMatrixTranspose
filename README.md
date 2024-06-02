@@ -64,7 +64,7 @@ Here follows the Hierarchy of relevant project's files :
 
 Makefile defines 4 rules :
 * **make** : builds object files and **homework-1 + homework-2** executables
-* **make debug** :  builds object files and **homework-1 + homework-2** executables adding debugging flags
+* **make debug** :  builds object files and ALL executables adding debugging flags
 * **make benchmark** : builds object files and **benchmark + benchmark_gpu** executable
 * **make clean** : cleans all object files
 
@@ -102,38 +102,35 @@ make clean
 make debug
 ./run_cache_benchmark.sh
 ```
+<hr>
 
 ## GPU test commands (Homework-2)
 
-**"run_main.sh"** script sets **parameters** related to **homework-1** executable and runs it
+**"launch_main.sh"** script sets **parameters** related to **homework-2** executable and runs it
 <br>
-To [change run parameters](run_main.sh?plain=1#L12-L19) and have a better understanding of its functionalities see : [**run_main.sh**](run_main.sh?plain=1#L3-L9)
+To [change run parameters](launch_main.sh?plain=1#L26-L37) and have a better understanding of its functionalities see : [**run_main.sh**](launch_main.sh?plain=1#L17-L23)
 ```
 make
-./run_main.sh
+sbatch launch_main.sh
 ```
-
+Then as the job ends:
+```
+cat output.out
+```
 <br>
 
-**"run_benchmark.sh"** script sets **parameters** related to **benchmark** executable and runs it
+**"launch_benchmark.sh"** script sets **parameters** related to **benchmark_gpu** executable and runs it
 <br>
 extracted data can be found on the [**data folder**](data/)
 <br>
-To [change run parameters](run_benchmark.sh?plain=1#L20-L28) and have a better understanding of its functionalities see : [**run_benchmark.sh**](run_benchmark.sh?plain=1#L3-L17)
+To [change run parameters](launch_benchmark.sh?plain=1#L35-L49) and have a better understanding of its functionalities see : [**run_benchmark.sh**](launch_benchmark.sh?plain=1#L16-L30)
 ```
 make benchmark
-./run_benchmark.sh
+sbatch launch_benchmark.sh
 ```
-
-<br>
-
-**"run_cache_benchmark.sh"** script sets **parameters** related to **homework-1** and runs Cachegrind on it, extracting localized informations about cache misses inside transpose_naive() or transpose_blocks() functions (according to the chosen parameter "method")
-<br>
-To [change run parameters](run_cache_benchmark.sh?plain=1#L18-L25) and have a better understanding of its functionalities see : [**run_cache_benchmark.sh**](run_cache_benchmark.sh?plain=1#L3-L15)
+Then as the job ends:
 ```
-make clean
-make debug
-./run_cache_benchmark.sh
+cat output.out
 ```
 
 
