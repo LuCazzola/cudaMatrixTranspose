@@ -123,6 +123,7 @@ scp -r cudaMatrixTranspose <YOUR USERNAME>@marzola.disi.unitn.it:/home/<YOUR USE
 Then login and go inside the project's folder
 ```
 cd cudaMatrixTranspose
+module load cuda
 ```
 <hr><br>
 
