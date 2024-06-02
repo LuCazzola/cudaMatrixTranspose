@@ -14,7 +14,6 @@ To see the report and better understand what this work is about, click [**Here**
 Download the directory
 ```
 git clone https://github.com/LuCazzola/cudaMatrixTranspose.git
-cd cudaMatrixTranspose
 ```
 <br>
 
