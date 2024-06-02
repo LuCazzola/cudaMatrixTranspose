@@ -83,7 +83,7 @@ Go first inside the repository before running the scripts
 cd cudaMatrixTranspose
 ```
 
-<br>
+<hr><br>
 
 ### COMMANDS
 **"run_main.sh"** script sets **parameters** related to **homework-1** executable and runs it.
