@@ -67,10 +67,14 @@ Makefile defines 4 rules :
 * **make debug** :  builds object files and ALL executables adding debugging flags
 * **make benchmark** : builds object files and **benchmark + benchmark_gpu** executable
 * **make clean** : cleans all object files
+<br>
+There are many pre-set scripts to choose from :
+* [**CPU** scripts section (Homework-1)](#CPU-sec)
+* [**GPU** scripts section (Homework-2)](#GPU-sec)
 
 <hr><br>
 
-## CPU test commands (Homework-1)
+## <a name="CPU-sec">CPU test commands (Homework-1)</a>
 
 **"run_main.sh"** script sets **parameters** related to **homework-1** executable and runs it
 <br>
@@ -102,13 +106,13 @@ make clean
 make debug
 ./run_cache_benchmark.sh
 ```
-<hr>
+<hr><br>
 
-## GPU test commands (Homework-2)
+## <a name="GPU-sec">GPU test commands (Homework-2)</a>
 
 **"launch_main.sh"** script sets **parameters** related to **homework-2** executable and runs it
 <br>
-To [change run parameters](launch_main.sh?plain=1#L26-L37) and have a better understanding of its functionalities see : [**run_main.sh**](launch_main.sh?plain=1#L17-L23)
+To [change run parameters](launch_main.sh?plain=1#L26-L37) and have a better understanding of its functionalities see : [**launch_main.sh**](launch_main.sh?plain=1#L17-L23)
 ```
 make
 sbatch launch_main.sh
@@ -123,7 +127,7 @@ cat output.out
 <br>
 extracted data can be found on the [**data folder**](data/)
 <br>
-To [change run parameters](launch_benchmark.sh?plain=1#L35-L49) and have a better understanding of its functionalities see : [**run_benchmark.sh**](launch_benchmark.sh?plain=1#L16-L30)
+To [change run parameters](launch_benchmark.sh?plain=1#L35-L49) and have a better understanding of its functionalities see : [**launch_benchmark.sh**](launch_benchmark.sh?plain=1#L16-L30)
 ```
 make benchmark
 sbatch launch_benchmark.sh
