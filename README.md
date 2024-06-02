@@ -114,6 +114,11 @@ make debug
 <a name="GPU-sec"></a>
 ## GPU test commands ( Homework-2 )
 
+**NOTE** : please notice that the following commands are supposed to be ran on the Marzola DISI cluster (so modify the launch_*.sh files if needed to set --sbatch options). First upload the project's directory to the login node
+```
+scp -r cudaMatrixTranspose <YOUR USERNAME>@marzola.disi.unitn.it:/home/<YOUR USERNAME>
+```
+
 **"launch_main.sh"** script sets **parameters** related to **homework-2** executable and runs it
 <br>
 To [change run parameters](launch_main.sh?plain=1#L26-L37) and have a better understanding of its functionalities see : [**launch_main.sh**](launch_main.sh?plain=1#L17-L23)
@@ -121,7 +126,7 @@ To [change run parameters](launch_main.sh?plain=1#L26-L37) and have a better und
 make
 sbatch launch_main.sh
 ```
-Then as the job ends:
+Then  ends:
 ```
 cat output.out
 ```
@@ -135,10 +140,6 @@ To [change run parameters](launch_benchmark.sh?plain=1#L35-L49) and have a bette
 ```
 make benchmark
 sbatch launch_benchmark.sh
-```
-Then as the job ends:
-```
-cat output.out
 ```
 
 
