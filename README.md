@@ -70,8 +70,9 @@ Makefile defines 4 rules :
 <br>
 There are many pre-set scripts to choose from :
 <br>
-* a <a href="#CPU-sec">CPU scripts section ( Homework-1 )</a>
-* b <a href="#GPU-sec">**GPU** scripts section ( Homework-2 )</a> 
+>> <a href="#CPU-sec">CPU scripts section ( Homework-1 )</a>
+<br>
+>> <a href="#GPU-sec">GPU scripts section ( Homework-2 )</a> 
 
 <hr><br>
 
