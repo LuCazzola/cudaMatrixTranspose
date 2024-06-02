@@ -113,11 +113,16 @@ make debug
 
 <a name="GPU-sec"></a>
 ## GPU test commands ( Homework-2 )
-
-**NOTE** : please notice that the following commands are supposed to be ran on the Marzola DISI cluster (so modify the launch_*.sh files if needed to set --sbatch options). First upload the project's directory to the login node
+### NOTE
+Please consider that the following commands are supposed to be ran on the **Marzola DISI cluster**, modify the [launch_*.sh files](launch_main.sh?plain=1#L3-L13) if needed to change the SLURM system.
+<br>
+**Outside the cloned project folder** upload the project's directory to the login node
 ```
 scp -r cudaMatrixTranspose <YOUR USERNAME>@marzola.disi.unitn.it:/home/<YOUR USERNAME>
 ```
+Then login 
+
+<br><br>
 
 **"launch_main.sh"** script sets **parameters** related to **homework-2** executable and runs it
 <br>
