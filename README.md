@@ -161,7 +161,7 @@ Inside the project's directory there's also a python script which take's the con
   
 <br>
 
-Test it by :
+Test it by running (on you own device) :
 ```
 python3 plot_data.py
 ```
