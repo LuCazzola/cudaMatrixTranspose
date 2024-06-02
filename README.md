@@ -125,6 +125,7 @@ Then login and go inside the project's folder
 cd cudaMatrixTranspose
 ```
 <hr><br>
+
 ### COMMANDS
 **"launch_main.sh"** script sets **parameters** related to **homework-2** executable and runs it
 <br>
