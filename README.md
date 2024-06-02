@@ -77,6 +77,14 @@ There are many pre-set scripts to choose from :
 
 <a name="CPU-sec"></a>
 ## CPU test commands ( Homework-1 )
+### NOTE
+Go first inside the repository before running the scripts
+```
+cd cudaMatrixTranspose
+```
+
+<br>
+
 ### COMMANDS
 **"run_main.sh"** script sets **parameters** related to **homework-1** executable and runs it.
 <br>
