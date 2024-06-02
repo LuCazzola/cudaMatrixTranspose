@@ -114,7 +114,7 @@ make debug
 <a name="GPU-sec"></a>
 ## GPU test commands ( Homework-2 )
 ### NOTE
-Please consider that the following commands are supposed to be ran on the **Marzola DISI cluster**, modify the [launch_*.sh files](launch_main.sh?plain=1#L3-L13) if needed to change partition or SLURM system.
+Please consider that the following commands are supposed to be ran on the **Marzola DISI cluster**, modify the [launch_main.sh](launch_main.sh?plain=1#L3-L13) & [launch_benchmark.sh](launch_benchmark.sh?plain=1#L3-L13) if needed to change partition or SLURM system.
 <br><br>
 **Outside the cloned project folder** upload the project's directory to the login node
 ```
@@ -164,7 +164,7 @@ Test it by :
 ```
 python3 plot_data.py
 ```
-You can customize what information to plot inside the [**script**](plot_data.py?plain=1#L53-L73)
+You can customize what information to plot inside the [**script**](plot_data.py?plain=1#L53-L74)
 
 
 <hr><br>
