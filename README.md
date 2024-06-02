@@ -69,13 +69,15 @@ Makefile defines 4 rules :
 * **make clean** : cleans all object files
 <br>
 There are many pre-set scripts to choose from :
-* <a href="#CPU-sec">**CPU** scripts section (Homework-1)</a>
-* <a href="#GPU-sec">**GPU** scripts section (Homework-2)</a>
+<br>
+> <a href="#CPU-sec">**CPU** scripts section ( Homework-1 )</a>
+<br>
+> <a href="#GPU-sec">**GPU** scripts section ( Homework-2 )</a>
 
 <hr><br>
 
 <a name="CPU-sec"></a>
-## CPU test commands Homework-1
+## CPU test commands ( Homework-1 )
 
 **"run_main.sh"** script sets **parameters** related to **homework-1** executable and runs it
 <br>
@@ -110,7 +112,7 @@ make debug
 <hr><br>
 
 <a name="GPU-sec"></a>
-## GPU test commands Homework-2
+## GPU test commands ( Homework-2 )
 
 **"launch_main.sh"** script sets **parameters** related to **homework-2** executable and runs it
 <br>
