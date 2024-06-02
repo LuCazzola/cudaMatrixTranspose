@@ -69,8 +69,8 @@ Makefile defines 4 rules :
 * **make clean** : cleans all object files
 <br>
 There are many pre-set scripts to choose from :
-* [**CPU** scripts section (Homework-1)](#CPU-test-commands-(Homework-1))
-* [**GPU** scripts section (Homework-2)](#GPU-test-commands-(Homework-2))
+* [**CPU** scripts section (Homework-1)](#cpu-test-commands-(homework-1))
+* [**GPU** scripts section (Homework-2)](#gpu-test-commands-(homework-2))
 
 <hr><br>
 
