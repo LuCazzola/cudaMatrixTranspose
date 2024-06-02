@@ -74,8 +74,8 @@ There are many pre-set scripts to choose from :
 
 <hr><br>
 
-
-## <a name="CPU-sec">CPU test commands Homework-1</a>
+<a name="CPU-sec"/>
+## CPU test commands Homework-1
 
 **"run_main.sh"** script sets **parameters** related to **homework-1** executable and runs it
 <br>
@@ -109,8 +109,8 @@ make debug
 ```
 <hr><br>
 
-
-## <a name="GPU-sec">GPU test commands Homework-2</a>
+<a name="GPU-sec" />
+## GPU test commands Homework-2
 
 **"launch_main.sh"** script sets **parameters** related to **homework-2** executable and runs it
 <br>
