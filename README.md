@@ -79,7 +79,7 @@ There are many pre-set scripts to choose from :
 <a name="CPU-sec"></a>
 ## CPU test commands ( Homework-1 )
 ### COMMANDS
-**"run_main.sh"** script sets **parameters** related to **homework-1** executable and runs it
+**"run_main.sh"** script sets **parameters** related to **homework-1** executable and runs it.
 <br>
 To [change run parameters](run_main.sh?plain=1#L12-L19) and have a better understanding of its functionalities see : [**run_main.sh**](run_main.sh?plain=1#L3-L9)
 ```
@@ -89,7 +89,7 @@ make
 
 <br>
 
-**"run_benchmark.sh"** script sets **parameters** related to **benchmark** executable and runs it
+**"run_benchmark.sh"** script sets **parameters** related to **benchmark** executable and runs it.
 <br>
 extracted data can be found on the [**data folder**](data/)
 <br>
@@ -114,7 +114,7 @@ make debug
 <a name="GPU-sec"></a>
 ## GPU test commands ( Homework-2 )
 ### NOTE
-Please consider that the following commands are supposed to be ran on the **Marzola DISI cluster**, modify the [launch_main.sh](launch_main.sh?plain=1#L3-L13) & [launch_benchmark.sh](launch_benchmark.sh?plain=1#L3-L13) if needed to change partition or SLURM system.
+Please consider that the following commands are supposed to be ran on the **Marzola DISI cluster**, modify the [launch_main.sh](launch_main.sh?plain=1#L3-L13) & [launch_benchmark.sh](launch_benchmark.sh?plain=1#L3-L13) scripts if needed to change partition or SLURM system.
 <br><br>
 **Outside the cloned project folder** upload the project's directory to the login node
 ```
@@ -127,7 +127,7 @@ cd cudaMatrixTranspose
 <hr><br>
 
 ### COMMANDS
-**"launch_main.sh"** script sets **parameters** related to **homework-2** executable and runs it
+**"launch_main.sh"** script sets **parameters** related to **homework-2** executable and runs it.
 <br>
 To [change run parameters](launch_main.sh?plain=1#L26-L37) and have a better understanding of its functionalities see : [**launch_main.sh**](launch_main.sh?plain=1#L17-L23)
 ```
@@ -140,7 +140,7 @@ cat output.out
 ```
 <br>
 
-**"launch_benchmark.sh"** script sets **parameters** related to **benchmark_gpu** executable and runs it
+**"launch_benchmark.sh"** script sets **parameters** related to **benchmark_gpu** executable and runs it.
 <br>
 extracted data can be found on the [**data folder**](data/)
 <br>
