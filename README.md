@@ -134,7 +134,7 @@ To [change run parameters](launch_main.sh?plain=1#L26-L37) and have a better und
 make
 sbatch launch_main.sh
 ```
-Then  ends:
+To visualize the results, once the node returns do:
 ```
 cat output.out
 ```
@@ -155,8 +155,8 @@ sbatch launch_benchmark.sh
 ## Graph Plotting
 Inside the project's directory there's also a python script which take's the content of [**data folder**](data/) and generates 2 types of graphs
 
-* Matrix size X Mean execution time
-* Matrix size X Mean effective bandwidth
+* x : Matrix size - y : Mean execution time
+* x : Matrix size - y : Mean effective bandwidth
   
 <br>
 
