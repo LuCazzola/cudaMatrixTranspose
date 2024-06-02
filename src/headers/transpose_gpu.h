@@ -1,7 +1,7 @@
 #ifndef TRANSPOSE_GPU_H
 #define TRANSPOSE_GPU_H
 
-#include "matrix_gpu.h"
+#include "matrix.h"
 #include "common_cuda.h"
 
 // Transpose on GPU using shared memory
