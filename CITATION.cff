@@ -1,0 +1,8 @@
+@software{matTrans_LucaC,
+  author = {Luca Cazzola},
+  month = {5},
+  title = {{cuda inplace matrix transpose}},
+  url = {https://github.com/LuCazzola/cudaMatrixTranspose,
+  version = {1.0},
+  year = {2024}
+}
